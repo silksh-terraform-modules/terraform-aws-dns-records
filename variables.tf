@@ -8,7 +8,7 @@ variable "records" {
 
 variable "tld" {
   default = ""
-  type = string
+  type    = string
 }
 
 variable "is_private_zone" {
