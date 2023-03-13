@@ -1,6 +1,6 @@
 data "aws_route53_zone" "zone" {
   name         = var.tld
-  private_zone = var.is_private_zone
+  vpc_id       = var.vpc_id
 }
 
 resource "aws_route53_record" "records" {

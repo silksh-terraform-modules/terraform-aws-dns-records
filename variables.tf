@@ -11,6 +11,6 @@ variable "tld" {
   type    = string
 }
 
-variable "is_private_zone" {
-  default = false
+variable "vpc_id" {
+  default = null
 }
