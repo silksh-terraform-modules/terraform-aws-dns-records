@@ -1,6 +1,7 @@
 variable "records" {
   # default = {
-  #   "testowy" = { value = "testowy.silksh.pl", type = "A" }
+  #   "ttl" = { value = "ttl.example.com", type = "CNAME", ttl = "3600"}
+  #   "example" = { value = "1.1.1.1", type = "A"}
   # }
   # type = map
   default = ""
