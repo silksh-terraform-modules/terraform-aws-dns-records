@@ -9,7 +9,7 @@ resource "aws_route53_record" "records" {
   zone_id  = data.aws_route53_zone.zone.id
   name     = "${regex("^.", each.key) != "@" ? "${each.key}." : ""}${var.tld}."
   type     = each.value.type
-  ttl      = try(ecach.value.ttl, "60")
+  ttl      = try(each.value.ttl, "60")
   records  = each.value.value
 
 }
